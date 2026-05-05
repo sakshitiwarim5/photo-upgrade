@@ -1,0 +1,12 @@
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+replicate==0.30.0
+httpx==0.27.0
+python-dotenv==1.0.1
+Pillow==10.3.0
+
+# Bonus: background removal (optional)
+# Uncomment below to enable "Remove Background" feature
+# rembg==2.0.57
+# onnxruntime==1.18.0
