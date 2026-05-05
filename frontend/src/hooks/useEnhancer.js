@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 
-const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+const API_BASE = process.env.REACT_APP_API_URL || (window.location.origin.includes('localhost') ? 'http://localhost:8000' : '/_/backend');
 
 export function useEnhancer() {
   const [status, setStatus] = useState('idle'); // idle | uploading | enhancing | done | error
